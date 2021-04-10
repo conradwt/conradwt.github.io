@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #1a202c;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main {
+  display: grid;
+  height: 100vh;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  row-gap: 1rem;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  margin: 0 3rem 2rem;
+  border-radius: 50%;
+}
+
+.name {
+  margin: 0 3rem;
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.description {
+  margin: 0 3rem;
+  font-size: 3rem;
+}
+
+.link {
+  color: #63b3ed;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  display: grid;
+  margin: 5rem 3rem 0;
+  column-gap: 5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.svg:hover {
+  opacity: 0.8;
+}
+
+.github {
+  fill: #181717;
+}
+
+.linkedin {
+  fill: #0077b5;
+}
+
+.twitter {
+  fill: #1da1f2;
+}
+
+.facebook {
+  fill: #3b5998;
+}
+
+@media screen and (max-width: 760px) {
+  .main {
+    align-content: start;
+  }
+
+  .image {
+    margin-top: 3rem;
+  }
+
+  .svg {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  .socials {
+    column-gap: 6rem;
+  }
+
+  .svg {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  html {
+    font-size: 30%;
+  }
+
+  .socials {
+    column-gap: 7rem;
+  }
+
+  .svg {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  html {
+    font-size: 30%;
+  }
+}
